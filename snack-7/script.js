@@ -24,7 +24,7 @@ const students = [
 
 // METODO FOR EACH (non lo userei)
 
-const forEach = students.forEach((currElem) => {
+students.forEach((currElem) => {
 
   if (currElem.id == 2){
     console.log(currElem)
@@ -37,6 +37,7 @@ const forEach = students.forEach((currElem) => {
 let filtro = students.filter((currElem) => currElem.id == 2)
 
 console.log(filtro)
+
 
 
 // METODO FIND (utile in questo caso perchè ID è sequenziale, ma trova soltanto il primo)
