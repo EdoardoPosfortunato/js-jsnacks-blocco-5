@@ -17,3 +17,37 @@ const mele = [
 ];
 
 // A partire dall'array fornito, crea due array. Uno con le mele di almeno 7 cm di diametro. L'altro con le restanti.
+
+
+// con metodo foreach e if (legge array di oggetti una volta sola)
+
+let piudiSette = [];
+let altre = [];
+
+mele.forEach((currElem) => {
+  if(currElem.diametro >= 7){
+
+    piudiSette.push(currElem)
+
+  } else {
+
+    altre.push(currElem)
+
+  }
+})
+
+console.log("METODO FOREACH + IF")
+console.log(piudiSette)
+console.log(altre) 
+
+console.log("--------------------------------------------------")
+
+// metodo filter (legge array di oggetti 2 volte)
+
+let maggioridiSette = mele.filter((curElem) => curElem.diametro >= 7)
+let tutteleAltre = mele.filter((curElem) => curElem.diametro < 7)
+
+console.log("METODO FILTER")
+console.log(maggioridiSette)
+console.log(tutteleAltre)
+
